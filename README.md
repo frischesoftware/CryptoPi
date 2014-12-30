@@ -30,14 +30,14 @@ The situation is and remains problematic, as
 CryptoPi
 --------
 
-I am proposing to use a separate computer - in this case a (RaspberryPi)[http://www.raspberrypi.org/] as a separate platform
+I am proposing to use a separate computer - in this case a [RaspberryPi](http://www.raspberrypi.org/) as a separate platform
 on which a message is composed and encrypted:
 
 To prevent any kinds of hacks, no internet connection, no cables, no data transfer per USB-memory are allowed! Instead,
 the encrypted text is encoded as a QR code, to be displayed on the screen. This QR code can then be photographed, for example 
 with the camera of a smartphone, and sent with any messaging app or email.
 
-The receipient receives a QR code and uses the (Raspberry Pi camera)[http://www.raspberrypi.org/help/camera-module-setup/] to
+The receipient receives a QR code and uses the [Raspberry Pi camera](http://www.raspberrypi.org/help/camera-module-setup/) to
 transfer the QR code to their CryptoPi. There, the message is decrypted and displayed on the screen.
 
 Using a QR code may seem strange in this context. It is basically a custom interface, over which no data except the 
@@ -53,7 +53,7 @@ messaging app or email.
 Encryption
 ----------
 
-Today most applications use the excellent (asymmetric cryptography)[https://en.wikipedia.org/wiki/Public-key_cryptography].
+Today most applications use the excellent [asymmetric cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography).
 This allows to people to use encryption without having to meet and exchange keys. However, since we have to meet our communication partner to give them the CryptoPi hardware and instructions anyway, we can just as well
 use the One Time Pad for encryption. This massively simplifies the implementation and allows anyone with basic programming
 knowledge to understand and verify the code. The OTP is also theoretically secure.
